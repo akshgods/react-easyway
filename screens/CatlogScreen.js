@@ -3,11 +3,20 @@ import {
     View,
     Text,
     StyleSheet,
-    FlatList
+    FlatList,
+    Image,
+    TouchableOpacity,
+    Dimensions
 } from "react-native";
 import BackButton from '../components/BackButton';
+import CardComponent from '../components/CardComponent';
+
 const BaseUrl='http://54.91.113.204/';
 
+const screenSize={
+    height:Dimensions.get('window').height,
+    width: Dimensions.get('window').width
+}
 class CatlogScreen extends Component {
     constructor(props){
         super(props);
@@ -76,11 +85,48 @@ class CatlogScreen extends Component {
             <View style={styles.container}>
             <BackButton/>
                 <Text>CatlogScreen</Text>
-                <FlatList
+                {/* <FlatList
           data={products}
           renderItem={({item}) => <Text>{item.product_title}, {item.product_image}</Text>}
           keyExtractor={(item, index) => index.toString() }
-        />
+        /> */}
+     
+     <CardComponent
+     imgUri={'https://cdn.pixabay.com/photo/2015/02/28/17/28/tomato-mozzarella-653838_960_720.jpg'}
+     cardTitle={'Welcome Title'}
+     cardPrice={'40'}
+     cardPriceText={'4 unidades'}
+     cardButton={'Select'}
+     />
+     {/* <View style={{flex:1}}>
+
+        <View style={{
+             flex: 1,
+             flexDirection:'row',
+             borderBottomWidth:2,
+             borderRadius:10,
+             backgroundColor:'#fff',
+             margin:20    
+        }}>
+            <View style={{flex:1,alignItems: 'stretch'}}>
+                <Image  style={styles.cardImage} resizeMode="contain"
+                 source={{uri:'https://cdn.pixabay.com/photo/2015/02/28/17/28/tomato-mozzarella-653838_960_720.jpg'}}
+                  />
+            </View>
+            <View style={{}}>
+                <Text style={styles.cardTitle}>
+                    Welcome to card title
+                </Text>
+            <View>
+                <Text style={styles.cardPrice}>
+                    Q40.00 <Text style={styles.forwordSlash}>/</Text> 4 unidades
+                </Text>
+            </View>
+            </View>
+        </View>
+
+
+    </View> */}
             </View>
         );
     }
@@ -90,7 +136,32 @@ export default CatlogScreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
+        // alignItems: 'center',
+        // justifyContent: 'center',
+    },
+    card:{
+       
+    },
+    cardImageWrapper:{
+   
+    },
+    cardTextWrapper:{
+
+    },
+    cardImage:{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0,
+    },
+    cardTitle:{
+
+    },
+    cardPrice:{
+
+    },
+    forwordSlash:{
+
     }
 });
