@@ -10,7 +10,7 @@ import { withNavigation } from "react-navigation";
 class BackButton extends Component {
     render() {
         return (
-            <TouchableOpacity style={styles.container}>
+            <TouchableOpacity style={styles.container} onPress={()=>{this.props.navigation.goBack()}}>
                 <Text>BackButton</Text>
             </TouchableOpacity>
         );
@@ -20,7 +20,6 @@ export default withNavigation(BackButton);
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
         alignItems: 'center',
         justifyContent: 'center'
     }

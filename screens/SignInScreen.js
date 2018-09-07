@@ -6,6 +6,7 @@ import {
     TouchableOpacity,
     AsyncStorage
 } from "react-native";
+import BackButton from "../components/BackButton"; 
 
 class SignInScreen extends Component {
     loginMe=async()=>{
@@ -15,6 +16,7 @@ class SignInScreen extends Component {
     render() {
         return (
             <View style={styles.container}>
+            <BackButton />
                 <Text>SignInScreen</Text>
             <TouchableOpacity onPress={this.loginMe}>
                 <Text>Login</Text>

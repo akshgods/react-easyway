@@ -4,11 +4,12 @@ import {
     Text,
     StyleSheet
 } from "react-native";
-
+import BackButton from "../components/BackButton";
 class SignUpScreen extends Component {
     render() {
         return (
             <View style={styles.container}>
+            <BackButton />
                 <Text>SignUpScreen</Text>
             </View>
         );

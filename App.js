@@ -35,6 +35,10 @@ const AuthNav=createStackNavigator(
   Welcome:WelcomeScreen,
   SignIn:SignInScreen,
   SignUp:SignUpScreen,
+},{
+  navigationOptions:{
+    header:null
+  }
 })
 
 const HomeNav=createStackNavigator({
