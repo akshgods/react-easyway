@@ -29,6 +29,7 @@ import WelcomeScreen from './screens/WelcomeScreen';
 import SignInScreen from './screens/SignInScreen';
 import SignUpScreen from './screens/SignUpScreen';
 import HomeScreen from './screens/HomeScreen';
+import CatlogScreen from './screens/CatlogScreen';
 
 const AuthNav=createStackNavigator(
   {
@@ -42,7 +43,8 @@ const AuthNav=createStackNavigator(
 })
 
 const HomeNav=createStackNavigator({
-  Home:HomeScreen
+  Home:HomeScreen,
+  Catlog:CatlogScreen
 },
 {
   /* The header config from HomeScreen is now here */

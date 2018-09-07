@@ -16,6 +16,9 @@ class HomeScreen extends Component {
         return (
             <View style={styles.container}>
                 <Text>HomeScreen</Text>
+                <TouchableOpacity onPress={()=>{this.props.navigation.navigate('Catlog');}}>
+                <Text>Catlog Screen</Text>
+            </TouchableOpacity>
                 <TouchableOpacity onPress={this.logoutMe}>
                 <Text>Logout</Text>
             </TouchableOpacity>
