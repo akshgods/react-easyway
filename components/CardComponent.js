@@ -22,7 +22,7 @@ export default class CardComponent extends Component {
                  <Text>
                         Welcome to card title
                 </Text>
-                <View style={{alignSelf:'stretch'}}>
+                <View style={{alignSelf:'center',flexDirection:'row'}}>
                     <Text>Q{this.props.cardPrice}</Text>
                     <Text>/</Text>
                     <Text>{this.props.cardPriceText}</Text>

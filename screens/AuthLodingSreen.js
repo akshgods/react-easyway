@@ -14,7 +14,7 @@ class AuthLodingSreen extends Component {
     }
     checkLogin=async()=>{
         const isLogin=await AsyncStorage.getItem('isLogin');
-        this.props.navigation.navigate(isLogin? 'Catlog' : 'Auth');
+        this.props.navigation.navigate(isLogin? 'Home' : 'Auth');
     }
     render() {
         return (
