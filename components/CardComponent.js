@@ -30,11 +30,18 @@ export default class CardComponent extends Component {
                  <Text>
                         {this.props.cardTitle}
                 </Text>
+<<<<<<< HEAD
                 <View style={{flexDirection:'row',width:screenSize.width*42/100,alignSelf:'center',marginTop:5}}>
                     <Text style={{textAlign:'center'}}>Q{this.props.cardPrice}
                       <Text>/</Text>
                       <Text style={{}} >{this.props.cardPriceText}</Text>
                     </Text>
+=======
+                <View style={{alignSelf:'center',flexDirection:'row'}}>
+                    <Text>Q{this.props.cardPrice}</Text>
+                    <Text>/</Text>
+                    <Text>{this.props.cardPriceText}</Text>
+>>>>>>> fa6d54004c491ccd0558acf0adbdb4d460510b19
                 </View>
                 <Button transparent onPress={()=>{alert('ok')}}>
                   {/* <Icon active name="thumbs-up" /> */}
