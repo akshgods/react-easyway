@@ -93,9 +93,9 @@ class CatlogScreen extends Component {
      
      <CardComponent
      imgUri={'https://cdn.pixabay.com/photo/2015/02/28/17/28/tomato-mozzarella-653838_960_720.jpg'}
-     cardTitle={'Welcome Title'}
+     cardTitle={'Welcome card Title Welcome card Title Welcome card Title Welcome card Title Welcome card Title'}
      cardPrice={'40'}
-     cardPriceText={'4 unidades'}
+     cardPriceText={'4 unidades Welcome to card title'}
      cardButton={'Select'}
      />
      {/* <View style={{flex:1}}>
